@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+
+    <h1 class='center'>Temperature Converter</h1>
+    <h3 class='center transition'>Warning: The input must be a number.</h3>
+
+    <div class="converterPart center">
+    <input id="degreeF" type="number" name="degreesF" placeholder="Input temp (e.g. 32)">
+    <!-- <input id="degreeC" type="text" name="degreesC" placeholder="Input C"> -->
+    <button id='convertToC' type="button" name="button">Convert to Celcius</button>
+    <button id='convertToF' type="button" name="button">Convert to Farenheit</button>
+    <button id='clear1' type="button" name="button">Clear Inputs</button>
+    <!-- <input id='converToF' type="button" name="ConvertF" value="Convert to Farenheit"> -->
+    <!-- <input id='convertToC' type="button" name="ConvertC" value="Convert to Celcius"> -->
+  </div>
+
+  <div class="answer center">
+  </div>
+  <!-- </div> -->
+
+  <script type="text/javascript">
+
+  $(document).ready(function ()
+  {
+      var glow = $('h3');
+      setInterval(function()
+      {
+          glow.toggleClass('glow');
+      }, 1000);
+  });
+
+
+    // var takeC = document.querySelector('#degreeC')
+    var takeF = document.querySelector('#degreeF')
+
+    // var convertToFar = document.querySelector('#convertToC')
+    // var convertToCel = document.querySelector('#convertToC')
+
+    // var displayit = function() {
+    //   document.querySelector(".answer").innerHTML = "'takeC.value' + ' degrees Farenheit equals ' + 'f'"
+    // }
+
+    var cToF = function(c) {
+      return (c * 1.8 + 32);
+    }
+
+    var fToC = function(f) {
+      return (f - 32) * (5/9);
+    }
+
+    var showCToF = function() {
+      if (takeF.value === '') {
+        alert('You must enter a number first, GOSH!')
+      } else
+      var f = fToC(takeF.value);
+      console.log(f + ' degrees Celcius');
+      // takeC.value = f.toFixed(1) + ' degrees C';
+      document.querySelector(".answer").innerHTML = takeF.value + ' degrees Farenheit   =   ' + f.toFixed(1) + ' degrees Celcius';
+    }
+
+    var showFToC = function() {
+      if (takeF.value === '') {
+        alert('You must enter a number first, GOSH!')
+      } else
+      var c = cToF(takeF.value);
+      console.log(c + " degrees Farenheit");
+      // takeF.value = c.toFixed(1) + ' degrees F'
+      document.querySelector(".answer").innerHTML = takeF.value + ' degrees Celcius   =   ' + c.toFixed(1) + ' degrees Farenheit';
+    }
+
+    var clearit = function() {
+      document.querySelector('#degreeF').value = '';
+      // document.querySelector('#degreeC').value = '';
+      document.querySelector(".answer").innerHTML = '';
+      // var takeF.value = null;
+      // var takeC.value = null;
+    }
+
+    var dynamic = function() {
+      console.log(takeF.value)
+    }
+
+    convertToC.addEventListener('click', showCToF);
+    convertToF.addEventListener('click', showFToC);
+    clear1.addEventListener('click', clearit);
+    degreeF.addEventListener('input', showCToF);
+    // convertToCel.addEventListener('click', show);
+    // takeC.addEventListener('key', show);
+
+    var glow = $('.confirm_selection');
+        setInterval(function(){
+        glow.toggleClass('glow');
+        }, 1000);
+
+  </script>
+
+  </body>
+</html>

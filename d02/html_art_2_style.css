@@ -1,0 +1,122 @@
+.Complete-box {
+  width: 1000px;
+  height:1000px;
+  background-color: black;
+}
+
+.dis-inline {
+  display: inline-block;
+}
+
+.Row-1 {
+  height: 300px;
+}
+
+.Row-2 {
+  height: 400px;
+}
+
+.Row-3 {
+  height: 150px;
+}
+
+.Row-4 {
+  height: 150px;
+}
+
+.Row-1-height {
+  height: 280px;
+}
+
+.Row-2-height {
+  height: 380px;
+}
+
+.Row-3-height {
+  height: 130px;
+}
+
+.Row-4-height {
+  height: 150px;
+}
+
+.color-white {
+  background-color: white;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.skinny-1 {
+  width: 70px;
+}
+
+.skinny-2 {
+  width: 100px;
+
+}
+
+.skinny-3 {
+  width: 110px;
+}
+
+.border-remove {
+  margin-bottom: -20px;
+}
+
+.first-3 {
+  width: 240px;
+}
+
+.first-4 {
+  width: 300px;
+}
+
+.second-3 {
+  width: 240px;
+}
+
+.second-4 {
+  width: 110px;
+}
+
+.second-5 {
+  width: 176px;
+}
+
+.third-3 {
+  width: 364px;
+}
+
+.third-4  {
+  width: 176px;
+}
+
+.forth-4 {
+  width: 300px;
+}
+
+.pad-it {
+  margin-right: 10px;
+}
+
+.pad-it-t {
+  margin-top: 0px;
+}
+
+.Row2-height-extra {
+  height: 400px
+}
+
+.Row3-height-extra {
+  height: 150px;
+}

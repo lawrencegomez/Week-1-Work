@@ -1,0 +1,28 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,300' rel='stylesheet' type='text/css'>
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.font {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+.big {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+}
+
+.move {
+  margin: 0 auto;
+  width: 250px;
+}
+
+li {
+
+}

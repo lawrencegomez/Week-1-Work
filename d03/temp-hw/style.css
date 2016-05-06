@@ -1,0 +1,66 @@
+body {
+  background-color: #7B9CBB;
+}
+
+.converterPart {
+  width: 100%;
+  height: 100px;
+}
+
+#degreeF {
+  height: 40px;
+  width: 200px;
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+
+button {
+  height: 45px;
+  /*align-content: center;*/
+}
+
+h1 {
+  vertical-align: middle;
+  /*color: blue;*/
+  font-family: 'VT323';
+  font-size: 100px;
+  margin-bottom: 10px;
+}
+
+h3 {
+/*color: #B32B00;*/
+text-align: center;
+/*margin: 50px 300px;*/
+font-size: 30px;
+}
+
+.transition {
+  animation: glow .8s infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 0 0 10px red;
+    }
+}
+
+.answer {
+  height: 100px;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.answer {
+  font-family: 'Candal', sans-serif;
+  font-size: 25px;
+}
+
+/*h3:hover,
+h3.glow
+    {
+        text-shadow: 0 0 10px Green;
+    }*/

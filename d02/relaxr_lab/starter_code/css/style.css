@@ -1,0 +1,206 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+.center {
+  text-align: center;
+}
+
+.separate {
+  padding: 100px 20px 100px 20px;
+  border: none;
+  outline: none;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     /*background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+     background-size: cover;*/
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin: auto;
+  height: 1000px;
+
+}
+
+.main-pic {
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
+  height: 940px;
+  /*background-color: black;*/
+}
+
+.benefits {
+  background-color: #f0efef;
+  height: 470px;
+  padding: 0 0 0 400px;
+}
+
+.The-quote {
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
+  height: 400px;
+  padding: 90px 0 90px 0;
+}
+
+.Sign-up {
+  background-color: yellow;
+  height: 140px;
+  padding: 40px 0 30px 0;
+  color: white;
+}
+
+.headline {
+  background-color: black;
+  height: 200px;
+}
+
+/*.social-links {
+  background-color: lime;
+  height: 600px;
+}*/
+
+button {
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  border: none;
+  border-radius: 7px;
+  background-color: yellow;
+  color: black;
+  height:55px;
+  width: 220px;
+}
+
+/*I made the logo "Relaxr" larger than 24px due to it not looking right on my laptop (non-retina display)*/
+header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 2px;
+  padding: 15px 0px 0px 250px;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  color: black;
+  font-weight: 600;
+  /*margin: 0 0 0 400px;*/
+  padding-top: 55px;
+  padding-bottom: 30px;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 55px;
+  font-weight: 590;
+  text-align: center;
+  color: white;
+  padding: 150px 0 100px 0px;
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: light;
+  color: grey;
+  padding: 2px 0px 2px 0px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: grey;
+  font-weight: light;
+  /*padding: 20px 0px 40px 400px;*/
+}
+
+#testimonial {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-weight: light;
+  font-style: italic;
+  font-size: 32px;
+}
+#signature {
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  padding-top: 10px;
+}
+
+#person-quote {
+  padding: 0px 0 40px 0;
+}
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  height: 100px;
+  padding-top: 50px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

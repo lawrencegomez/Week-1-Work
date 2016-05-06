@@ -1,0 +1,23 @@
+body {
+  background: grey;
+}
+img {
+  height: 500px;
+  border-style: solid;;
+  border-color: black;
+  border-width: thick;
+}
+p {
+  color: #17BEDC;
+}
+
+h1 {
+  color: green;
+  text-decoration-style: dotted;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.class {
+  margin-left: 50px;
+}

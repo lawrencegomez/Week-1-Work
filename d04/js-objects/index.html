@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Objects</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var me = {name: 'Lawrence',
+            age: 27,
+            weight: 230,
+            height: 72,
+            skinColor: 'tan',
+            nationality: 'USA',
+            shoeSize: 12,
+            computer: 'Mac',
+            favoriteFood: 'pizza'
+            }
+      var myCar = {name: 'Big Daddy',
+              make: 'Ram',
+              model: '1500 Sport',
+              year: 2015
+              }
+      var person = {name: 'Butch',
+                age: 34,
+                weight: 280,
+                dog: {name: 'Hammer', age: 4, numberOfLegs: 4, breed: 'Doberman'}
+               }
+
+
+      //this adds a new key called "car" to the object "me" and then assigns
+      //it to myCar
+      me.car = myCar
+
+      //adds a new key called "sayAhh" that is a function that console logs "Ahhh"
+      me.sayAhh = function() {
+        console.log('aahHHHHHHhhhhh');
+      }
+
+      //adds a new key called "jump" that is a function that console logs ....
+      me.jump = function(howHigh) {
+        console.log('I can jump ' + howHigh + ' feet in the air');
+      }
+
+      var myBankAccount = {balance: 10000,
+                           withdraw: function(num) {
+                             var num = prompt('How much do you want to withdraw?');
+                             myBankAccount.balance -= num;
+                             console.log(myBankAccount.balance);
+                             return 'Your new balance is ' + myBankAccount.balance + ' dollars'
+
+                           },
+                           deposit: function(num2) {
+                             num2 = prompt('How much do you want to deposit?');
+                             myBankAccount.balance += Number(num2);
+                             console.log(myBankAccount.balance);
+                             return 'Your new balance is ' + myBankAccount.balance + ' dollars'
+                           }
+                          }
+
+    </script>
+  </body>
+</html>
