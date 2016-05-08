@@ -1,10 +1,10 @@
 var game = {
     player1: {
-      name: 'Lawrence',
-      marker: "x", //game.player1.marker would return this
+      name: 'Player 1',
+      marker: "x",
     },
     player2: {
-      name: 'Computer',
+      name: 'Player 2',
       marker: "o",
     }
 }
@@ -33,10 +33,6 @@ var switchTurns = function() {
     showPlayer1Score.className = 'Player1ScoreCount'
   }
 }
-
-// var updateScorePlayer1 = function () {
-//   showPlayer1Score.innerHTML += ('<p>' + player1Score + '</p>')
-// }
 
 var winner = ''
 
@@ -67,11 +63,19 @@ var checkWinner = function() {
         (squares[2].innerHTML == '<p>o</p>' && squares[5].innerHTML == '<p>o</p>' && squares[8].innerHTML == '<p>o</p>'))
         {
           winner = game.player2.name
-          alert('The ' + winner +  ' has won')
+          alert(winner +  ' has won')
           player2Score += 1
           showPlayer2Score.innerHTML = player2Score
           clearBoard()
         }
+        else if
+        ((squares[0].innerHTML !== '' && squares[1].innerHTML !== '' && squares[2].innerHTML !== '' &&
+          squares[3].innerHTML !== '' && squares[4].innerHTML !== '' && squares[5].innerHTML !== '' &&
+          squares[6].innerHTML !== '' && squares[7].innerHTML !== '' && squares[8].innerHTML !== ''))
+          {
+            alert('Sorry, nobody won this round. Play again!')
+            clearBoard()
+          }
         }
 
 var squares = document.querySelectorAll('.square');
@@ -84,7 +88,7 @@ for (var i = 0; i < squares.length; i ++) {
         if (currentPlayer == game.player1) {
       this.innerHTML += ('<p>' + game.player1.marker + '</p>')
               this.className = 'square red'
-  } else
+        } else
       this.innerHTML += ('<p>' + game.player2.marker + '</p>')
           switchTurns()
   } else

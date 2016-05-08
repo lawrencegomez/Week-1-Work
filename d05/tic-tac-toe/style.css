@@ -39,7 +39,7 @@ h3 {
 .square {
   width: 192px;
   height: 192px;
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   float: left;
   /*font-size: 150px;
   align-items: center;
@@ -145,6 +145,42 @@ button {
   background-color: red;
 }
 
+/*.white {
+  color: white;
+}*/
+
+#square1 {
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+}
+#square2 {
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+}
+#square3 {
+  border-bottom: 5px solid white;
+}
+#square4 {
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+}
+#square5 {
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+}
+#square6 {
+  border-bottom: 5px solid white;
+}
+#square7 {
+  border-right: 5px solid white;
+}
+#square8 {
+  border-right: 5px solid white;
+}
+#square9 {
+
+}
+
 
 .Player1ScoreCount {
   font-size: 90px;
@@ -169,4 +205,5 @@ button {
 
 .underline {
   text-decoration: underline;
+
 }
