@@ -3,23 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>Tic-Tac-Toe</title>
+
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
+    
   </head>
   <body>
+    <h1>Tic  -  Tac  -  Toe</h1>
+    <h3>Press the start button to begin</h3>
+    <div class="buttons">
+      <button id='startGame' type="button" name="button">Start Game</button><br>
+      <button id='resetGame' type="button" name="button">Clear Board</button><br>
+      <button id='resetScore' type="button" name="button">Reset Score</button>
 
-    <div id="board" class="">
-      <div class="square">1</div>
-      <div class="square">2</div>
-      <div class="square">3</div>
-      <div class="square">4</div>
-      <div class="square">5</div>
-      <div class="square">6</div>
-      <div class="square">7</div>
-      <div class="square">8</div>
-      <div class="square">9</div>
     </div>
 
 
+    <div id="board" class="">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
+    <div class="scoreTable">
+      <div class="score">
+          Player 1 &nbsp;&nbsp; | &nbsp;&nbsp; Player 2
+      </div>
+      <div class="Player1ScoreCount">
+      </div>
+      <div class="Player2ScoreCount">
+      </div>
+    </div>
 
     <script src="app.js"></script>
   </body>
