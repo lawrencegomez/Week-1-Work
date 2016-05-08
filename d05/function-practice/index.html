@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Function Practice</title>
+  </head>
+  <body>
+
+    <button type="button" name="button">Print Me!</button>
+
+    <script type="text/javascript">
+
+      var button = document.querySelector('button');
+      button.addEventListener('click', naame)
+
+      {name: 'Hammer',
+       breed: 'Doberman Pinscher',
+       sayName: function() {
+            console.log(this.name);
+       },
+       growl: function() {
+         console.log('Grrrrr I am a ' + this.breed);
+       },
+      }
+
+      function openYourEyes() {
+        return seeMe = true;
+      }
+      var seeMe = true;
+      console.log(seeMe);
+
+
+      function calculate(x, y, z) {
+        if (x === 'sum') {
+          return sum(y,z);
+        }
+        else if (x === 'difference') {
+          return difference(y,z);
+        }
+        else if (x === 'product') {
+          return product(y,z);
+        }
+        else if (x === 'quotient') {
+          return quotient(y,z);
+        }
+        else return "Dude, pick an operator!"
+
+      }
+
+      function sum(arg1, arg2) {
+        return arg1 + arg2;
+      }
+
+      function difference(arg1, arg2) {
+        return arg1 - arg2;
+      }
+
+      function product(arg1, arg2) {
+        return arg1 * arg2;
+      }
+
+      function quotient(arg1, arg2) {
+        return arg1 / arg2;
+      }
+
+    </script>
+  </body>
+</html>

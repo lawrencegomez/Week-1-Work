@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <ul id='fizzbuzz'>
+    </ul>
+
+    <script type="text/javascript">
+
+      var fizz = document.querySelector('#fizzbuzz')
+
+      var x = prompt('Pick a number between 1 and 100');
+
+      for(var i = 1; i <= x; i ++) {
+        if (i%3 === 0 && i%5 === 0) {
+          console.log('fizzbuzz');
+          fizz.innerHTML += ('<li>' + 'fizzbuzz' + '</li>')
+        } else if (i%3 === 0) {
+          console.log('fizz');
+          fizz.innerHTML += ('<li>' + 'fizz' + '</li>')
+        } else if ( i%5 === 0) {
+          console.log('buzz');
+          fizz.innerHTML += ('<li>' + 'buzz' + '</li>')
+        } else
+          console.log(i);
+          fizz.innerHTML += ('<li>' + i + '</li>')
+        }
+
+    </script>
+  </body>
+</html>
