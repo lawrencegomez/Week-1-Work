@@ -205,5 +205,34 @@ button {
 
 .underline {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 480px) {
+  .buttons {
+    margin: 20px 0 0 300px;
+    display: inline-flex;
+  }
+  #board {
+    margin: 75px 173px 55px 0;
+  }
+  .scoreTable {
+    margin: 100px 0 0 307px;
+  }
+  #startGame {
+    margin: 15px;
+    padding: 0px
+  }
+  #resetGame {
+    margin: 15px;
+    padding: 0px
+  }
+  #resetScore {
+    margin: 15px;
+    padding: 0px
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
 
 }
