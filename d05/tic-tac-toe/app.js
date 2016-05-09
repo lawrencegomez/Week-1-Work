@@ -110,7 +110,7 @@ var resetScore = function() {
   showPlayer2Score.innerHTML = 0
 }
 
-
-startButton.addEventListener('click', start)
+start()
+// startButton.addEventListener('click', start)
 resetButton.addEventListener('click', clearBoard)
 resetScores.addEventListener('click', resetScore)

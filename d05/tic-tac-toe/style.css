@@ -60,7 +60,29 @@ button {
   background-color: black;
   color: white;
   font-size: 25px;
-  padding: 20px;
+  padding: 10px;
+  margin: 15px auto;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+button:active {
+  border-radius: 10px;
+  background-color: grey;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  margin: 15px auto;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+button:focus {
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
   margin: 15px auto;
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
@@ -80,7 +102,7 @@ button {
 
 .buttons {
   width: 400px;
-  height: 200px;
+  height: 100px;
   display: inline-block;
   text-align: center;
   margin: 65px 0 0 220px;
@@ -209,8 +231,9 @@ button {
 
 @media screen and (min-width: 480px) {
   .buttons {
-    margin: 20px 0 0 300px;
+    margin: 45px 0 0 316px;
     display: inline-flex;
+    padding: 5px;
   }
   #board {
     margin: 75px 173px 55px 0;
