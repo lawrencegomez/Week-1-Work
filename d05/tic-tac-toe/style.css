@@ -235,6 +235,12 @@ button:focus {
     display: inline-flex;
     padding: 5px;
   }
+
+  button:active {
+    background-color: red;
+    border: 1px solid red;
+  }
+
   #board {
     margin: 75px 173px 55px 0;
   }
